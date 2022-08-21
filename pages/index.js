@@ -3,8 +3,8 @@ import {
   Link,
   Container,
   Heading,
+  Text,
   Box,
-  SimpleGrid,
   Button,
   List,
   ListItem,
@@ -20,7 +20,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { MdWork } from 'react-icons/md'
 import { VscCode } from 'react-icons/vsc'
-import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoLinkedin, IoLogoGithub, IoLinkOutline } from 'react-icons/io5'
+import { AiFillRobot } from 'react-icons/ai'
 import {
   DiNodejs,
   DiReact,
@@ -28,6 +29,15 @@ import {
   DiJava,
   DiPython
 } from 'react-icons/di'
+import {
+  SiC,
+  SiLinux,
+  SiTypescript,
+  SiWordpress,
+  SiRedwoodjs,
+  SiGit,
+  SiGithub
+} from 'react-icons/si'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -75,6 +85,15 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title" color="pink.600">
+          <AiFillRobot
+            fontSize={25}
+            style={{
+              display: 'inline',
+              position: 'relative',
+              top: '0.4rem',
+              right: '0.1rem'
+            }}
+          />
           General Overview
         </Heading>
         <Paragraph>
@@ -89,48 +108,49 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title" color="pink.600">
-          Experience{' '}
           <MdWork
             fontSize={25}
             style={{
               display: 'inline',
               position: 'relative',
-              top: '0.4rem'
+              top: '0.4rem',
+              right: '0.1rem'
             }}
           />
+          Experience{' '}
         </Heading>
         <BioSection>
-          <Heading as="h6" variant="section-subtitle" color="whiteAlpha.700">
+          <Heading as="h6" variant="section-subtitle" color="purple.300">
             Sep 2018 - Jun 2021
           </Heading>
           B.S in Computer Science at Lebanese American University
         </BioSection>
         <BioSection>
-          <Heading as="h6" variant="section-subtitle">
+          <Heading as="h6" variant="section-subtitle" color="purple.300">
             Jul 2020 - Sep 2020
           </Heading>
           Web Development Bootcamp at LetsGrant
         </BioSection>
         <BioSection>
-          <Heading as="h6" variant="section-subtitle">
+          <Heading as="h6" variant="section-subtitle" color="purple.300">
             Aug 2020 - Oct 2020
           </Heading>
           Full-Stack Developer Internship at BluGrass Technologies
         </BioSection>
         <BioSection>
-          <Heading as="h6" variant="section-subtitle">
+          <Heading as="h6" variant="section-subtitle" color="purple.300">
             Jun 2021 - <i>Now</i>
           </Heading>
           WordPress developer Freelance at MENAWCA
         </BioSection>
         <BioSection>
-          <Heading as="h6" variant="section-subtitle">
+          <Heading as="h6" variant="section-subtitle" color="purple.300">
             Dec 2021 - Feb 2022
           </Heading>
           Junior Software Developer Freelancer at SABIS® SARL
         </BioSection>
         <BioSection>
-          <Heading as="h6" variant="section-subtitle">
+          <Heading as="h6" variant="section-subtitle" color="purple.300">
             Mar 2022 - <i>Now</i>
           </Heading>
           Full-Stack Developer at Poyesis
@@ -139,15 +159,16 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title" color="pink.600">
-          Skills{' '}
           <VscCode
             fontSize={25}
             style={{
               display: 'inline',
               position: 'relative',
-              top: '0.4rem'
+              top: '0.4rem',
+              right: '0.1rem'
             }}
           />
+          Skills
         </Heading>
         <Grid templateColumns="repeat(4, 1fr)" gap={6}>
           <GridItem>
@@ -155,6 +176,9 @@ const Home = () => (
           </GridItem>
           <GridItem>
             <DiNodejs fontSize={55} h="55" />
+          </GridItem>
+          <GridItem>
+            <SiRedwoodjs fontSize={55} h="55" />
           </GridItem>
           <GridItem>
             <DiJavascript fontSize={55} h="55" />
@@ -165,49 +189,67 @@ const Home = () => (
           <GridItem>
             <DiPython fontSize={55} h="55" />
           </GridItem>
-          {/* <GridItem w="100%" h="10" bg="blue.500" />
-          <GridItem w="100%" h="10" bg="blue.500" />
-          <GridItem w="100%" h="10" bg="blue.500" />
-          <GridItem w="100%" h="10" bg="blue.500" /> */}
+          <GridItem>
+            <SiC fontSize={55} h="55" />
+          </GridItem>
+          <GridItem>
+            <SiTypescript fontSize={55} h="55" />
+          </GridItem>
+          <GridItem>
+            <SiLinux fontSize={55} h="55" />
+          </GridItem>
+          <GridItem>
+            <SiWordpress fontSize={55} h="55" />
+          </GridItem>
+          <GridItem>
+            <SiGit fontSize={55} h="55" />
+          </GridItem>
+          <GridItem>
+            <SiGithub fontSize={55} h="55" />
+          </GridItem>
         </Grid>
       </Section>
 
       <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          On the web
+        <Heading as="h3" variant="section-title" color="pink.600">
+          <IoLinkOutline
+            fontSize={25}
+            style={{
+              display: 'inline',
+              position: 'relative',
+              top: '0.4rem',
+              right: '0.1rem'
+            }}
+          />
+          Social Links
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/sayad-mallllek" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="highGreen"
+                color="purple.300"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @sayad-mallllek
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/ibrahim-elzein-39186919a/"
+              target="_blank"
+            >
               <Button
                 variant="ghost"
-                colorScheme="highGreen"
-                leftIcon={<IoLogoInstagram />}
+                color="purple.300"
+                leftIcon={<IoLogoLinkedin />}
               >
-                @craftzdog
+                @ibrahim-elzein
               </Button>
             </Link>
           </ListItem>
         </List>
-
-        <Box align="center" my={4}>
-          <NextLink href="/posts" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
     </Container>
   </Layout>
