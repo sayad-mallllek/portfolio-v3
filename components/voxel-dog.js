@@ -70,7 +70,7 @@ const VoxelDog = () => {
       controls.autoRotate = true
       controls.target = target
 
-      loadGLTFModel(scene, '/dog.glb', {
+      loadGLTFModel(scene, '/space.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {

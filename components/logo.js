@@ -35,7 +35,7 @@ const Logo = () => {
             fontWeight="bold"
             ml={3}
           >
-            Takuya Matsuyama
+            Ibrahim ElZein
           </Text>
         </LogoBox>
       </a>

@@ -8,18 +8,26 @@ import {
   Button,
   List,
   ListItem,
+  Grid,
+  GridItem,
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { BioSection } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import { MdWork } from 'react-icons/md'
+import { VscCode } from 'react-icons/vsc'
+import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import {
+  DiNodejs,
+  DiReact,
+  DiJavascript,
+  DiJava,
+  DiPython
+} from 'react-icons/di'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -29,23 +37,14 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        Hello, I&apos;m an indie app developer based in Japan!
-      </Box>
-
-      <Box display={{ md: 'flex' }}>
+      <Box display={{ md: 'flex' }} mt={{ base: 4, md: 10 }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Ibrahim ElZein
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>
+            Software Engineer / Scraper - <small>Feb 4, 2000</small>
+          </p>
         </Box>
         <Box
           flexShrink={0}
@@ -54,7 +53,7 @@ const Home = () => (
           textAlign="center"
         >
           <Box
-            borderColor="whiteAlpha.800"
+            borderColor="purple.600"
             borderWidth={2}
             borderStyle="solid"
             w="100px"
@@ -64,7 +63,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/Bob.webp"
               alt="Profile image"
               borderRadius="full"
               width="100%"
@@ -75,74 +74,102 @@ const Home = () => (
       </Box>
 
       <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          Work
+        <Heading as="h3" variant="section-title" color="pink.600">
+          General Overview
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
-          </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
-          </NextLink>
-          &quot; has more than 100k subscribers.
+          Junior Software Engineer and Web Scraper who loves to sleep :) ! I
+          enjoy playing Football, Chess, and Billiard (Pool). I develop
+          softwares (Web and Mobile) in a Full-Stack manner (mostly in
+          Javascript Frameworks and Python Django). I have basic knowledge in
+          the DevOps field aswell. I enjoy solving coding problems (algorithms
+          and data structures) and puzzles
         </Paragraph>
-        <Box align="center" my={4}>
-          <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
 
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
+        <Heading as="h3" variant="section-title" color="pink.600">
+          Experience{' '}
+          <MdWork
+            fontSize={25}
+            style={{
+              display: 'inline',
+              position: 'relative',
+              top: '0.4rem'
+            }}
+          />
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <Heading as="h6" variant="section-subtitle" color="whiteAlpha.700">
+            Sep 2018 - Jun 2021
+          </Heading>
+          B.S in Computer Science at Lebanese American University
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <Heading as="h6" variant="section-subtitle">
+            Jul 2020 - Sep 2020
+          </Heading>
+          Web Development Bootcamp at LetsGrant
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <Heading as="h6" variant="section-subtitle">
+            Aug 2020 - Oct 2020
+          </Heading>
+          Full-Stack Developer Internship at BluGrass Technologies
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <Heading as="h6" variant="section-subtitle">
+            Jun 2021 - <i>Now</i>
+          </Heading>
+          WordPress developer Freelance at MENAWCA
+        </BioSection>
+        <BioSection>
+          <Heading as="h6" variant="section-subtitle">
+            Dec 2021 - Feb 2022
+          </Heading>
+          Junior Software Developer Freelancer at SABIS® SARL
+        </BioSection>
+        <BioSection>
+          <Heading as="h6" variant="section-subtitle">
+            Mar 2022 - <i>Now</i>
+          </Heading>
+          Full-Stack Developer at Poyesis
         </BioSection>
       </Section>
 
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          I ♥
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title" color="pink.600">
+          Skills{' '}
+          <VscCode
+            fontSize={25}
+            style={{
+              display: 'inline',
+              position: 'relative',
+              top: '0.4rem'
+            }}
+          />
         </Heading>
-        <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
-        </Paragraph>
+        <Grid templateColumns="repeat(4, 1fr)" gap={6}>
+          <GridItem>
+            <DiReact fontSize={55} />
+          </GridItem>
+          <GridItem>
+            <DiNodejs fontSize={55} h="55" />
+          </GridItem>
+          <GridItem>
+            <DiJavascript fontSize={55} h="55" />
+          </GridItem>
+          <GridItem>
+            <DiJava fontSize={55} h="55" />
+          </GridItem>
+          <GridItem>
+            <DiPython fontSize={55} h="55" />
+          </GridItem>
+          {/* <GridItem w="100%" h="10" bg="blue.500" />
+          <GridItem w="100%" h="10" bg="blue.500" />
+          <GridItem w="100%" h="10" bg="blue.500" />
+          <GridItem w="100%" h="10" bg="blue.500" /> */}
+        </Grid>
       </Section>
 
       <Section delay={0.3}>
@@ -154,7 +181,7 @@ const Home = () => (
             <Link href="https://github.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="highGreen"
                 leftIcon={<IoLogoGithub />}
               >
                 @craftzdog
@@ -162,32 +189,10 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
             <Link href="https://instagram.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="highGreen"
                 leftIcon={<IoLogoInstagram />}
               >
                 @craftzdog
@@ -195,23 +200,6 @@ const Home = () => (
             </Link>
           </ListItem>
         </List>
-
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;100k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
 
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
