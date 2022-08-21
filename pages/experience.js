@@ -6,6 +6,9 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbBlugrass from '../public/images/experience/blugrass.png'
 import thumbLAU from '../public/images/experience/lau.jpg'
 import thumbMenawca from '../public/images/experience/menawca.jpg'
+import thumbSabis from '../public/images/experience/sabis.png'
+import thumbPoyesis from '../public/images/experience/poyesis.jpg'
+import thumbDealroom from '../public/images/experience/dealroom.avif'
 
 const Works = () => (
   <Layout title="Works">
@@ -38,7 +41,18 @@ const Works = () => (
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
+        <Section delay={0.3}>
+          <WorkGridItem
+            id="lau-lab"
+            title="Lab Assistant at Lebanese American University"
+            date="September 2019 - December 2020"
+            thumbnail={thumbLAU}
+          >
+            <b>Lab Assistant</b> for Juniors and Sophomores at Lebanese American
+            University
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.3}>
           <WorkGridItem
             id="blugrass"
             title="Blugrass"
@@ -48,7 +62,7 @@ const Works = () => (
             <b>Full-Stack Developer</b> Internship at Blugrass Technologies
           </WorkGridItem>
         </Section>
-        <Section delay={0.3}>
+        <Section delay={0.4}>
           <WorkGridItem
             id="menawca"
             title="MENAWCA"
@@ -58,21 +72,38 @@ const Works = () => (
             <b>Freelance WordPress Developer</b> for MENAWCA Org.
           </WorkGridItem>
         </Section>
-        <Section delay={0.3}></Section>
-      </SimpleGrid>
+        <Section delay={0.4}>
+          <WorkGridItem
+            id="sabis"
+            title="SABIS"
+            date="December 2021 - February 2022"
+            thumbnail={thumbSabis}
+          >
+            <b>Junior Software Developer Freelancer</b> at SABIS Sarl.
+          </WorkGridItem>
+        </Section>
 
-      <Section delay={0.4}>
-        <Divider my={6} />
+        <Section delay={0.5}>
+          <WorkGridItem
+            id="poyesis"
+            title="Poyesis"
+            date="March 2022 - Now"
+            thumbnail={thumbPoyesis}
+          >
+            <b>Full-Stack Developer</b> at Poyesis Sarl.
+          </WorkGridItem>
+        </Section>
 
-        <Heading as="h3" fontSize={20} mb={4}>
-          Old works
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.5}></Section>
-        <Section delay={0.5}></Section>
-        <Section delay={0.6}></Section>
+        <Section delay={0.5}>
+          <WorkGridItem
+            id="dealroom"
+            title="Dealroom"
+            date="May 2022 - August 2022"
+            thumbnail={thumbDealroom}
+          >
+            <b>Data Collection Engineer</b> at Dealroom Co.
+          </WorkGridItem>
+        </Section>
       </SimpleGrid>
     </Container>
   </Layout>

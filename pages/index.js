@@ -147,7 +147,7 @@ const Home = () => (
           <Heading as="h6" variant="section-subtitle" color="purple.300">
             Dec 2021 - Feb 2022
           </Heading>
-          Junior Software Developer Freelancer at SABIS® SARL
+          Junior Software Developer Freelancer at SABIS® Sarl.
         </BioSection>
         <BioSection>
           <Heading as="h6" variant="section-subtitle" color="purple.300">
