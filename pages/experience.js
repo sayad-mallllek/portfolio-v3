@@ -22,7 +22,7 @@ const Works = () => (
           <WorkGridItem
             id="lau"
             title="Lebanese American University"
-            date="September 2018 - June 2021"
+            date="Sep 2018 - Jun 2021"
             thumbnail={thumbLAU}
           >
             <b>B.S in Computer Science</b> at the Lebanese American University
@@ -45,7 +45,7 @@ const Works = () => (
           <WorkGridItem
             id="lau-lab"
             title="Lab Assistant at Lebanese American University"
-            date="September 2019 - December 2020"
+            date="Sep 2019 - Dec 2020"
             thumbnail={thumbLAU}
           >
             <b>Lab Assistant</b> for Juniors and Sophomores at Lebanese American
@@ -56,7 +56,7 @@ const Works = () => (
           <WorkGridItem
             id="blugrass"
             title="Blugrass"
-            date="August 2020 - October 2020"
+            date="Aug 2020 - Oct 2020"
             thumbnail={thumbBlugrass}
           >
             <b>Full-Stack Developer</b> Internship at Blugrass Technologies
@@ -76,7 +76,7 @@ const Works = () => (
           <WorkGridItem
             id="sabis"
             title="SABIS"
-            date="December 2021 - February 2022"
+            date="Dec 2021 - Feb 2022"
             thumbnail={thumbSabis}
           >
             <b>Junior Software Developer Freelancer</b> at SABIS Sarl.
@@ -87,7 +87,7 @@ const Works = () => (
           <WorkGridItem
             id="poyesis"
             title="Poyesis"
-            date="March 2022 - Now"
+            date="Mar 2022 - Now"
             thumbnail={thumbPoyesis}
           >
             <b>Full-Stack Developer</b> at Poyesis Sarl.
@@ -98,7 +98,7 @@ const Works = () => (
           <WorkGridItem
             id="dealroom"
             title="Dealroom"
-            date="May 2022 - August 2022"
+            date="May 2022 - Aug 2022"
             thumbnail={thumbDealroom}
           >
             <b>Data Collection Engineer</b> at Dealroom Co.
