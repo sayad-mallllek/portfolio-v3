@@ -1,19 +1,15 @@
-import NextLink from 'next/link'
 import {
   Link,
   Container,
   Heading,
-  Text,
   Box,
   Button,
   List,
   ListItem,
   Grid,
   GridItem,
-  useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection } from '../components/bio'
 import Layout from '../components/layouts/article'
