@@ -22,21 +22,19 @@ import { MdWork } from 'react-icons/md'
 import { VscCode } from 'react-icons/vsc'
 import { IoLogoLinkedin, IoLogoGithub, IoLinkOutline } from 'react-icons/io5'
 import { AiFillRobot } from 'react-icons/ai'
-import {
-  DiNodejs,
-  DiReact,
-  DiJavascript,
-  DiJava,
-  DiPython
-} from 'react-icons/di'
+import { DiNodejs, DiReact, DiJava, DiPython } from 'react-icons/di'
 import {
   SiC,
+  SiJavascript,
   SiLinux,
   SiTypescript,
   SiWordpress,
   SiRedwoodjs,
   SiGit,
-  SiGithub
+  SiGithub,
+  SiPostgresql,
+  SiMysql,
+  SiGithubactions
 } from 'react-icons/si'
 import Image from 'next/image'
 
@@ -100,9 +98,12 @@ const Home = () => (
           Junior Software Engineer and Web Scraper who loves to sleep :) ! I
           enjoy playing Football, Chess, and Billiard (Pool). I develop
           softwares (Web and Mobile) in a Full-Stack manner (mostly in
-          Javascript Frameworks and Python Django). I have basic knowledge in
-          the DevOps field aswell. I enjoy solving coding problems (algorithms
-          and data structures) and puzzles
+          Javascript Frameworks and Python Django). I love to write scripts
+          (linux scripts, discord/telegram bots, scraping scripts), because why
+          finish a task inn 15 minutes when you can automate it for 6 hours!
+          Moreover, I have basic knowledge in the DevOps field, and I am the IT
+          guy &#128526;. I enjoy solving coding problems (algorithms and data
+          structures) and puzzles.
         </Paragraph>
       </Section>
 
@@ -181,7 +182,7 @@ const Home = () => (
             <SiRedwoodjs fontSize={55} h="55" />
           </GridItem>
           <GridItem>
-            <DiJavascript fontSize={55} h="55" />
+            <SiJavascript fontSize={55} h="55" />
           </GridItem>
           <GridItem>
             <DiJava fontSize={55} h="55" />
@@ -206,6 +207,15 @@ const Home = () => (
           </GridItem>
           <GridItem>
             <SiGithub fontSize={55} h="55" />
+          </GridItem>
+          <GridItem>
+            <SiGithubactions fontSize={55} h="55" />
+          </GridItem>
+          <GridItem>
+            <SiMysql fontSize={55} h="55" />
+          </GridItem>
+          <GridItem>
+            <SiPostgresql fontSize={55} h="55" />
           </GridItem>
         </Grid>
       </Section>
