@@ -1,20 +1,15 @@
 import {
   Container,
   Badge,
-  Link,
-  List,
   ListItem,
-  SimpleGrid,
   UnorderedList,
   Heading,
   Center,
   Image
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title } from '../../components/work'
 import { useMediaQuery } from '@chakra-ui/react'
-import P from '../../components/paragraph'
 
 const Work = () => {
   const isMobile = useMediaQuery('(min-width: 600px)')
