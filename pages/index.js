@@ -18,21 +18,21 @@ import { MdWork } from 'react-icons/md'
 import { VscCode } from 'react-icons/vsc'
 import { IoLogoLinkedin, IoLogoGithub, IoLinkOutline } from 'react-icons/io5'
 import { AiFillRobot } from 'react-icons/ai'
-import { DiNodejs, DiReact, DiJava, DiPython } from 'react-icons/di'
-import {
-  SiC,
-  SiJavascript,
-  SiLinux,
-  SiTypescript,
-  SiWordpress,
-  SiRedwoodjs,
-  SiGit,
-  SiGithub,
-  SiPostgresql,
-  SiMysql,
-  SiGithubactions
-} from 'react-icons/si'
+import { SiRedwoodjs } from 'react-icons/si'
 import Image from 'next/image'
+import ReactIcon from '../public/icons/icons8-react'
+import NodeIcon from '../public/icons/icons8-nodejs'
+import JavascriptIcon from '../public/icons/icons8-javascript'
+import JavaIcon from '../public/icons/icons8-java'
+import PythonIcon from '../public/icons/icons8-python'
+import CIcon from '../public/icons/c-icon'
+import TypescriptIcon from '../public/icons/icons8-typescript'
+import LinuxIcon from '../public/icons/linux-icon'
+import WordpressIcon from '../public/icons/icons8-wordpress'
+import GitIcon from '../public/icons/icons8-git'
+import GithubIcon from '../public/icons/icons8-github'
+import MysqlIcon from '../public/icons/icons8-mysql-logo'
+import PostgresqlIcon from '../public/icons/icons8-postgresql'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -169,49 +169,46 @@ const Home = () => (
         </Heading>
         <Grid templateColumns="repeat(4, 1fr)" gap={6}>
           <GridItem>
-            <DiReact fontSize={55} />
+            <ReactIcon />
           </GridItem>
           <GridItem>
-            <DiNodejs fontSize={55} h="55" />
+            <NodeIcon />
           </GridItem>
           <GridItem>
-            <SiRedwoodjs fontSize={55} h="55" />
+            <SiRedwoodjs fontSize={55} color="#bf4722" h="55" />
           </GridItem>
           <GridItem>
-            <SiJavascript fontSize={55} h="55" />
+            <JavascriptIcon />
           </GridItem>
           <GridItem>
-            <DiJava fontSize={55} h="55" />
+            <JavaIcon />
           </GridItem>
           <GridItem>
-            <DiPython fontSize={55} h="55" />
+            <PythonIcon />
           </GridItem>
           <GridItem>
-            <SiC fontSize={55} h="55" />
+            <CIcon />
           </GridItem>
           <GridItem>
-            <SiTypescript fontSize={55} h="55" />
+            <TypescriptIcon />
           </GridItem>
           <GridItem>
-            <SiLinux fontSize={55} h="55" />
+            <LinuxIcon />
           </GridItem>
           <GridItem>
-            <SiWordpress fontSize={55} h="55" />
+            <WordpressIcon />
           </GridItem>
           <GridItem>
-            <SiGit fontSize={55} h="55" />
+            <GitIcon />
           </GridItem>
           <GridItem>
-            <SiGithub fontSize={55} h="55" />
+            <GithubIcon />
           </GridItem>
           <GridItem>
-            <SiGithubactions fontSize={55} h="55" />
+            <MysqlIcon />
           </GridItem>
           <GridItem>
-            <SiMysql fontSize={55} h="55" />
-          </GridItem>
-          <GridItem>
-            <SiPostgresql fontSize={55} h="55" />
+            <PostgresqlIcon />
           </GridItem>
         </Grid>
       </Section>
