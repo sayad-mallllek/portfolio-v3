@@ -4,7 +4,6 @@ import {
   GridItem,
   Text,
   Progress,
-  SlideFade,
   Collapse,
   Box,
   useMediaQuery
