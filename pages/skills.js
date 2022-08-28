@@ -3,6 +3,7 @@ import { SiRedwoodjs } from 'react-icons/si'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import SkillRow from '../components/skillRow'
+import JavascriptIcon from '../public/icons/icons8-javascript'
 import NodeIcon from '../public/icons/icons8-nodejs'
 import ReactIcon from '../public/icons/icons8-react'
 
@@ -51,6 +52,12 @@ const Skills = () => (
             icon={<SiRedwoodjs fontSize={55} color="#bf4722" h="55" />}
             progressValue={40}
             progressColor={'orange'}
+            text={redwoodText}
+          />
+          <SkillRow
+            icon={<JavascriptIcon />}
+            progressValue={90}
+            progressColor={'yellow'}
             text={redwoodText}
           />
         </Grid>
