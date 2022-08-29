@@ -167,7 +167,7 @@ const Home = () => (
           />
           Skills
         </Heading>
-        <Grid templateColumns="repeat(4, 1fr)" gap={6}>
+        <Grid templateColumns="repeat(4, 1fr)" gap={6} pl={5}>
           <GridItem>
             <ReactIcon />
           </GridItem>
