@@ -3,6 +3,7 @@ import { SiRedwoodjs } from 'react-icons/si'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import SkillRow from '../components/skillRow'
+import JavaIcon from '../public/icons/icons8-java'
 import JavascriptIcon from '../public/icons/icons8-javascript'
 import NodeIcon from '../public/icons/icons8-nodejs'
 import ReactIcon from '../public/icons/icons8-react'
@@ -19,8 +20,13 @@ const nodeText = `First backend framework to learn.
 
 const redwoodText = `The Latest full stack framework in my arsenal of stacks.
  Have high expectations and hopes for it.
- Experimenting in it for now by developing local projects for it.
+ Experimenting in it for now by developing local projects for it. (Todo list, Social Media mock app)
  `
+
+const javascriptText = `The core of my development career. I tend to research and explore all javascript libraries,
+  frameworks, and optimizations. Using ES6 version in production and ES7 version in experimental.`
+
+const javaText = `First programming language`
 
 const Skills = () => (
   <Layout title="Posts">
@@ -58,7 +64,13 @@ const Skills = () => (
             icon={<JavascriptIcon />}
             progressValue={90}
             progressColor={'yellow'}
-            text={redwoodText}
+            text={javascriptText}
+          />
+          <SkillRow
+            icon={<JavaIcon />}
+            progressValue={90}
+            progressColor={'red'}
+            text={javaText}
           />
         </Grid>
       </Section>
