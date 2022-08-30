@@ -4,12 +4,18 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import SkillRow from '../components/skillRow'
 import CIcon from '../public/icons/c-icon'
+import GitIcon from '../public/icons/icons8-git'
+import GithubIcon from '../public/icons/icons8-github'
 import JavaIcon from '../public/icons/icons8-java'
 import JavascriptIcon from '../public/icons/icons8-javascript'
+import MysqlIcon from '../public/icons/icons8-mysql-logo'
 import NodeIcon from '../public/icons/icons8-nodejs'
+import PostgresqlIcon from '../public/icons/icons8-postgresql'
 import PythonIcon from '../public/icons/icons8-python'
 import ReactIcon from '../public/icons/icons8-react'
 import TypescriptIcon from '../public/icons/icons8-typescript'
+import WordpressIcon from '../public/icons/icons8-wordpress'
+import LinuxIcon from '../public/icons/linux-icon'
 
 const reactText = `My favourite frontend stack due to its simplicity and 1 way binding.
  Working heavily in React (both on personal and work basis) by developing 
@@ -42,6 +48,23 @@ const cText = `Mainly used in Linux and bash scripts.
 const typescriptText = `When said developing in Javascript, Typescript is the language meant.
  Almost all Javascript projects have Typescript integrated within them.`
 
+const linuxText = `My favourite operating system. Considering I am a fan of the open source ideology,
+ Linux is my go-to environment in development (Ubuntu and Manjaro Distribution). Mainly used for
+ development, bash scripts (and developing new bash commands in c), and deployment. Also, Linux administration
+ is a skill under development.`
+
+const wordPressText = `Alongside building websites with code, building websites using UI tools
+ because why not? Handled multiple websites and plugins (developed slightly).`
+
+const gitText = `Alongside the regular push, pull, commit, add, and branch commands,
+ applied proficiency in integrating github actions and deploying to cloud services (mainly AWS).
+ In addition, installing and integrating third party actions and apps into repositories, and resolving
+ conflicts, head refs, and version control`
+
+const githubText = `Similar to git experience, but repository configurations
+ (installing Apps, labels, security and code automation, and branch protection)
+ and code review`
+
 const Skills = () => (
   <Layout title="Posts">
     <Container mt={10}>
@@ -66,48 +89,98 @@ const Skills = () => (
             progressValue={80}
             progressColor={'cyan'}
             text={reactText}
+            order={1}
           />
           <SkillRow
             icon={<NodeIcon />}
             progressValue={75}
-            progressColor={'green'}
+            progressColor={'lime'}
             text={nodeText}
+            order={2}
           />
           <SkillRow
             icon={<SiRedwoodjs fontSize={55} color="#bf4722" h="55" />}
             progressValue={40}
-            progressColor={'orange'}
+            progressColor={'redwood'}
             text={redwoodText}
+            order={3}
           />
           <SkillRow
             icon={<JavascriptIcon />}
             progressValue={90}
             progressColor={'yellow'}
             text={javascriptText}
+            order={4}
           />
           <SkillRow
             icon={<JavaIcon />}
             progressValue={90}
             progressColor={'red'}
             text={javaText}
+            order={1}
           />
           <SkillRow
             icon={<PythonIcon />}
             progressValue={90}
             progressColor={'telegram'}
             text={pythonText}
+            order={5}
           />
           <SkillRow
             icon={<CIcon />}
             progressValue={48}
             progressColor={'facebook'}
             text={cText}
+            order={6}
           />
           <SkillRow
             icon={<TypescriptIcon />}
             progressValue={90}
             progressColor={'blue'}
             text={typescriptText}
+            order={7}
+          />
+          <SkillRow
+            icon={<LinuxIcon />}
+            progressValue={90}
+            progressColor={'gray'}
+            text={linuxText}
+            order={8}
+          />
+          <SkillRow
+            icon={<WordpressIcon />}
+            progressValue={60}
+            progressColor={'twitter'}
+            text={wordPressText}
+            order={9}
+          />
+          <SkillRow
+            icon={<GitIcon />}
+            progressValue={75}
+            progressColor={'git'}
+            text={gitText}
+            order={10}
+          />
+          <SkillRow
+            icon={<GithubIcon />}
+            progressValue={75}
+            progressColor={'github'}
+            text={githubText}
+            order={11}
+          />
+          <SkillRow
+            icon={<MysqlIcon />}
+            progressValue={77}
+            progressColor={'orange'}
+            text={githubText}
+            order={12}
+          />
+          <SkillRow
+            icon={<PostgresqlIcon />}
+            progressValue={82}
+            progressColor={'blue'}
+            text={githubText}
+            order={13}
           />
         </Grid>
       </Section>

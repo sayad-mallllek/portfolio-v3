@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react'
 import { BiChevronDown } from 'react-icons/bi'
 
-const SkillRow = ({ icon, progressValue, progressColor, text }) => {
+const SkillRow = ({ icon, progressValue, progressColor, text, order = 1 }) => {
   const [rotated, setRotated] = useState(false)
   const isMobile = useMediaQuery('(min-width: 600px)')
 
@@ -25,6 +25,9 @@ const SkillRow = ({ icon, progressValue, progressColor, text }) => {
         sx={{
           cursor: 'pointer'
         }}
+        initial={{ y: 10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, delay: order * 0.2 }}
       >
         <Container
           height="100%"
@@ -43,6 +46,9 @@ const SkillRow = ({ icon, progressValue, progressColor, text }) => {
         sx={{
           cursor: 'pointer'
         }}
+        initial={{ y: 10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, delay: order * 0.2 }}
       >
         <Container
           width="100%"
@@ -52,6 +58,9 @@ const SkillRow = ({ icon, progressValue, progressColor, text }) => {
             flexDirection: 'column',
             justifyContent: 'center'
           }}
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: order * 0.2 }}
         >
           <Progress
             value={progressValue}
@@ -68,6 +77,9 @@ const SkillRow = ({ icon, progressValue, progressColor, text }) => {
         sx={{
           cursor: 'pointer'
         }}
+        initial={{ y: 10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, delay: order * 0.2 }}
       >
         <BiChevronDown
           fontSize={40}
