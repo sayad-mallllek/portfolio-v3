@@ -33,6 +33,7 @@ import GitIcon from '../public/icons/icons8-git'
 import GithubIcon from '../public/icons/icons8-github'
 import MysqlIcon from '../public/icons/icons8-mysql-logo'
 import PostgresqlIcon from '../public/icons/icons8-postgresql'
+import AwsIcon from '../public/icons/icons8-amazon-web-services'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -209,6 +210,9 @@ const Home = () => (
           </GridItem>
           <GridItem>
             <PostgresqlIcon />
+          </GridItem>
+          <GridItem>
+            <AwsIcon />
           </GridItem>
         </Grid>
       </Section>

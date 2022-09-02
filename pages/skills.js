@@ -4,6 +4,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import SkillRow from '../components/skillRow'
 import CIcon from '../public/icons/c-icon'
+import AwsIcon from '../public/icons/icons8-amazon-web-services'
 import GitIcon from '../public/icons/icons8-git'
 import GithubIcon from '../public/icons/icons8-github'
 import JavaIcon from '../public/icons/icons8-java'
@@ -64,6 +65,11 @@ const gitText = `Alongside the regular push, pull, commit, add, and branch comma
 const githubText = `Similar to git experience, but repository configurations
  (installing Apps, labels, security and code automation, and branch protection)
  and code review`
+
+const mysqlText = `The SQL to learn and test on, especially if you are on a Linux distro.
+ Configured some complex queries, functions, stored procedures, and classified permissions.`
+
+const postgresqlText = `The SQL used in production. Managed multiple Posgtres database instances on AWS.`
 
 const Skills = () => (
   <Layout title="Posts">
@@ -172,14 +178,21 @@ const Skills = () => (
             icon={<MysqlIcon />}
             progressValue={77}
             progressColor={'orange'}
-            text={githubText}
+            text={mysqlText}
             order={12}
           />
           <SkillRow
             icon={<PostgresqlIcon />}
             progressValue={82}
             progressColor={'blue'}
-            text={githubText}
+            text={postgresqlText}
+            order={13}
+          />
+          <SkillRow
+            icon={<AwsIcon />}
+            progressValue={65}
+            progressColor={'aws'}
+            text={postgresqlText}
             order={13}
           />
         </Grid>
