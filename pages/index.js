@@ -121,37 +121,37 @@ const Home = () => (
           <Heading as="h6" variant="section-subtitle" color="purple.300">
             Sep 2018 - Jun 2021
           </Heading>
-          B.S in Computer Science at Lebanese American University
+          B.S in <b>Computer Science</b> at <b>Lebanese American University</b>
         </BioSection>
         <BioSection>
           <Heading as="h6" variant="section-subtitle" color="purple.300">
             Jul 2020 - Sep 2020
           </Heading>
-          Web Development Bootcamp at LetsGrant
+          <b>Web Development</b> Bootcamp at <b>LetsGrant</b>
         </BioSection>
         <BioSection>
           <Heading as="h6" variant="section-subtitle" color="purple.300">
             Aug 2020 - Oct 2020
           </Heading>
-          Full-Stack Developer Internship at BluGrass Technologies
+          <b>Full-Stack Developer</b> Internship at <b>BluGrass Technologies</b>
         </BioSection>
         <BioSection>
           <Heading as="h6" variant="section-subtitle" color="purple.300">
             Jun 2021 - <i>Now</i>
           </Heading>
-          WordPress developer Freelance at MENAWCA
+          <b>WordPress developer</b> Freelance at <b>MENAWCA</b>
         </BioSection>
         <BioSection>
           <Heading as="h6" variant="section-subtitle" color="purple.300">
             Dec 2021 - Feb 2022
           </Heading>
-          Junior Software Developer Freelancer at SABIS® Sarl.
+          <b>Junior Software Developer</b> Freelancer at <b>SABIS® Sarl.</b>
         </BioSection>
         <BioSection>
           <Heading as="h6" variant="section-subtitle" color="purple.300">
             Mar 2022 - <i>Now</i>
           </Heading>
-          Full-Stack Developer at Poyesis
+          <b>Full-Stack Developer</b> at <b>Poyesis</b>
         </BioSection>
       </Section>
 
