@@ -96,7 +96,7 @@ const Logo = () => {
       <a>
         <LogoBox className="name-container">
           <GiPillow className="head-icon" />
-          <div class="sleeping">
+          <div className="sleeping">
             <span>z</span>
             <span>z</span>
             <span>z</span>

@@ -96,10 +96,10 @@ const Home = () => (
           enjoy playing Football, Chess, and Billiard (Pool). I develop
           softwares (Web and Mobile) in a Full-Stack manner (mostly in
           Javascript Frameworks and Python Django). I love to write scripts
-          (linux scripts, discord/telegram bots, scraping scripts), because why
-          finish a task inn 15 minutes when you can automate it for 6 hours!
-          Moreover, I have basic knowledge in the DevOps field, and I am the IT
-          guy &#128526;. I enjoy solving coding problems (algorithms and data
+          (linux scripts, discord/telegram bots, scrapers), because why finish a
+          task in 15 minutes when you can automate it for 6 hours! Moreover, I
+          have basic knowledge in the DevOps field, and I am the IT
+          guy&#128526;. I enjoy solving coding problems (algorithms and data
           structures) and puzzles.
         </Paragraph>
       </Section>
@@ -139,7 +139,7 @@ const Home = () => (
           <Heading as="h6" variant="section-subtitle" color="purple.300">
             Jun 2021 - <i>Now</i>
           </Heading>
-          <b>WordPress developer</b> Freelance at <b>MENAWCA</b>
+          <b>WordPress Developer</b> Freelance at <b>MENAWCA</b>
         </BioSection>
         <BioSection>
           <Heading as="h6" variant="section-subtitle" color="purple.300">
