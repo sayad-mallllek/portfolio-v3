@@ -18,6 +18,8 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Ibrahim's homepage" />
         <meta name="author" content="Ibrahim ElZein" />
         <meta name="author" content="sayad-mallllek" />
+        <meta name="Ibrahim ElZein" />
+        <meta name="author" content="sayad-mallllek" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="twitter:title" content="Ibrahim ElZein" />

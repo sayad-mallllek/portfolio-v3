@@ -25,7 +25,6 @@ import NodeIcon from '../public/icons/icons8-nodejs'
 import JavascriptIcon from '../public/icons/icons8-javascript'
 import JavaIcon from '../public/icons/icons8-java'
 import PythonIcon from '../public/icons/icons8-python'
-import CIcon from '../public/icons/c-icon'
 import TypescriptIcon from '../public/icons/icons8-typescript'
 import LinuxIcon from '../public/icons/linux-icon'
 import WordpressIcon from '../public/icons/icons8-wordpress'
@@ -34,6 +33,7 @@ import GithubIcon from '../public/icons/icons8-github'
 import MysqlIcon from '../public/icons/icons8-mysql-logo'
 import PostgresqlIcon from '../public/icons/icons8-postgresql'
 import AwsIcon from '../public/icons/icons8-amazon-web-services'
+import CIcon from '../public/icons/icons8-c'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)

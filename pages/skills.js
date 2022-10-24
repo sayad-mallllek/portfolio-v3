@@ -3,7 +3,7 @@ import { SiRedwoodjs } from 'react-icons/si'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import SkillRow from '../components/skillRow'
-import CIcon from '../public/icons/c-icon'
+import CIcon from '../public/icons/icons8-c'
 import AwsIcon from '../public/icons/icons8-amazon-web-services'
 import GitIcon from '../public/icons/icons8-git'
 import GithubIcon from '../public/icons/icons8-github'
@@ -24,7 +24,7 @@ const reactText = `My favourite frontend stack due to its simplicity and 1 way b
  Proficient in state management, redux, context, and hooks.
 `
 
-const nodeText = `First backend framework to learn.
+const nodeText = `First backend technology to learn.
  Mostly used in freelance due to its simple architecture (especially if combined with Express and Mongoose)
  alongside the npm libraries that provide essential equipment to finish the job.`
 
