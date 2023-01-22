@@ -92,7 +92,7 @@ const Home = () => (
           General Overview
         </Heading>
         <Paragraph>
-          Junior Software Engineer and Web Scraper who loves to sleep :) ! I
+          Software Engineer and Web Scraper who loves to sleep :) ! I
           enjoy playing Football, Chess, and Billiard (Pool). I develop
           softwares (Web and Mobile) in a Full-Stack manner (mostly in
           Javascript Frameworks and Python Django). I love to write scripts
